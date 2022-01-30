@@ -173,5 +173,5 @@ streaming_digest <- function(algo, errormode, algoint){
 serialize_ <- function(object, ...){
     if (length(object))
         return(lapply(object, serialize, ...))
-    serialize(object, ...)
+    serialize(object, xdr=F, ...)
 }
